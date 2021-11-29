@@ -1,0 +1,11 @@
+{
+  "name": "item",
+  "version": "1.0.0",
+  "description": "clase item",
+  "main": "item.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "pack",
+  "version": "1.0.0",
+  "description": "clase pack",
+  "main": "pack.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
