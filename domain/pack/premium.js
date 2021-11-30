@@ -1,15 +1,16 @@
 requirePack = require('../pack')
-proto = requirePack.proto
+protoPack = requirePack.proto
 Pack = requirePack.class
 
-function Premium(nombre, precio, extraFee) {
+function Premium(nombre, precio) {
     Pack.call(this, nombre, precio);
     this.precio = precio;
-    this.extraFee = extraFee;
+    this.extraFee = 5;
+    this.abierto = false
     // this.contenidos = contenidos
   }
   
-  Premium.prototype = Object.create(proto)
+  Premium.prototype = Object.create(protoPack)
 
   var factory = (function singlePremium() {
     return {

@@ -1,6 +1,7 @@
 function Pack(nombre, precio) {
     this.nombre = nombre
     this.precio = precio
+    this.abierto = false
 }
 
 Pack.prototype.getName = function () {
@@ -11,19 +12,17 @@ Pack.prototype.getPrecio = function () {
   return this.precio;
 };
 
-Pack.prototype.calcularPrecio = function () {
-    return this.extraFee + this.precio;
+Pack.prototype.vender = function () {
+  let funcionAbrir = function() {
+    function abrirPack(){ 
+        this.abierto = true
+    }
+    return abrirPack;
 };
+  this.abrir = funcionAbrir()
+  return this.precio + this.extraFee
+}
 
-var factory = (function singlePack() {
-  return {
-    getPack: function getPack(price) {
-      return new Pack(price);
-    },
-  };
-})();
-
-exports.pack = factory;
 exports.proto = Pack.prototype;
 exports.class = Pack;
 
