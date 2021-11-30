@@ -1,968 +1,986 @@
 [
-   [
-      {
-         "nombre":"Pack Squanchy Style",
-         "calidad":"Basic",
-         "precio":7,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "Rifle de pulso":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":30,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":10
-               }
-            },
-            "Poción del arcoiris":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":20,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":63
-               }
-            }
-         }
+  {
+    "id": 1,
+    "nombre": "Pack Squanchy Style",
+    "calidad": "Basic",
+    "precio": 7,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "Rifle de pulso": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 30,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 10
+        }
       },
-      {
-         "nombre":"Pack para gangsters",
-         "calidad":"Basic",
-         "precio":8,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm ",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "Rifle de pulso":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":30,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":10
-               }
-            },
-            "Cuchillo láser":{
-               "caracteristicas":{
-                  "Precio":3,
-                  "Calidad":12,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":46
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack Donald Trump",
-         "calidad":"Basic",
-         "precio":6,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm ",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "AK-47":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":100
-               }
-            },
-            "Bandera nacional":{
-               "caracteristicas":{
-                  "Precio":1,
-                  "Calidad":6,
-                  "Material":"normal",
-                  "Cantidad":2,
-                  "Demanda":15
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack piscina",
-         "calidad":"Basic",
-         "precio":12,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "Bañador de invisibilidad":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":12,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":12
-               }
-            },
-            "Flotador volador con forma de pato":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":30,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":0
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack brujas",
-         "calidad":"Basic",
-         "precio":6,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "Poción del arcoiris":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":20,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":63
-               }
-            },
-            "Poción del amor":{
-               "caracteristicas":{
-                  "Precio":4,
-                  "Calidad":20,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":12
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para maquilladores",
-         "calidad":"Basic",
-         "precio":4,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "Colorete":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":20,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":73
-               }
-            },
-            "Labial":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":13
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para niño low-cost",
-         "calidad":"Basic",
-         "precio":5,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "Chuches corrientes sin poderes":{
-               "caracteristicas":{
-                  "Precio":3,
-                  "Calidad":10,
-                  "Material":"consumible",
-                  "Cantidad":10,
-                  "Demanda":48
-               }
-            },
-            "Gorro de fiesta sin más":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":48,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":12
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para Payasos",
-         "calidad":"Basic",
-         "precio":3,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"3 cm ",
-            "ancho":"6 cm"
-         },
-         "contenidos":{
-            "Nariz de Payaso":{
-               "caracteristicas":{
-                  "Precio":1,
-                  "Calidad":1,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":1
-               }
-            },
-            "Peluca de Payaso":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":15,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":13
-               }
-            }
-         }
+      "Poción del arcoiris": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": 20,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 63
+        }
       }
-   ],
-   [
-      {
-         "nombre":"Pack Meeseek",
-         "calidad":"Standard",
-         "precio":19,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm ",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Meeseeks box":{
-               "caracteristicas":{
-                  "Precio":15,
-                  "Calidad":50,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":90
-               }
-            },
-            "Revolver":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":"12",
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":5
-               }
-            },
-            "Escoba":{
-               "caracteristicas":{
-                  "Precio":2,
-                  "Calidad":"normal",
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":12
-               }
-            }
-         }
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Pack para gangsters",
+    "calidad": "Basic",
+    "precio": 8,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm ",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "Rifle de pulso": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 30,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 10
+        }
       },
-      {
-         "nombre":"Pack Microscopico",
-         "calidad":"Standard",
-         "precio":20,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Bateria Miniverso":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":10,
-                  "Material":"normal",
-                  "Cantidad":2,
-                  "Demanda":10
-               }
-            },
-            "Parque de atracciones indestinal":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":72
-               }
-            },
-            "Encogedor":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":24,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":52
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack Covid",
-         "calidad":"Standard",
-         "precio":25,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm ",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Cura del Covid":{
-               "caracteristicas":{
-                  "Precio":15,
-                  "Calidad":1,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":57
-               }
-            },
-            "ADN paciente 0":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":30,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":60
-               }
-            },
-            "Desinfectante":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":33,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":6
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack Guerra Galáctica",
-         "calidad":"Standard",
-         "precio":25,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Droide R2-P2":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":90
-               }
-            },
-            "Sable de plasma":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":20,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":72
-               }
-            },
-            "Pistola San Holo":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":10,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":72
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack Terricola",
-         "calidad":"Standard",
-         "precio":16,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Album Maluma":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":33,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":6
-               }
-            },
-            "Autografo David Gelpi":{
-               "caracteristicas":{
-                  "Precio":6,
-                  "Calidad":25,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":6
-               }
-            },
-            "Resido nuclear":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":33,
-                  "Material":"consumible",
-                  "Cantidad":2,
-                  "Demanda":95
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack Informatico",
-         "calidad":"Standard",
-         "precio":18,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Libro Python de la rata espacial":{
-               "caracteristicas":{
-                  "Precio":3,
-                  "Calidad":12,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":46
-               }
-            },
-            "Disco duro 500 Yottabytes":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":1,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":90
-               }
-            },
-            "Guia Github":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":12,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":12
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack AdultSwim",
-         "calidad":"Standard",
-         "precio":27,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm ",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Blu-ray Temporada 3 Rick y Morty":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":12,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":23
-               }
-            },
-            "Autografo Bruce Taylor":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":22,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":54
-               }
-            },
-            "FLCL Blu-ray edición coleccionista":{
-               "caracteristicas":{
-                  "Precio":12,
-                  "Calidad":50,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":45
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack PickleRick",
-         "calidad":"Standard",
-         "precio":16,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"4 cm ",
-            "ancho":"8 cm"
-         },
-         "contenidos":{
-            "Peluche Pickle Rick":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":12,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":12
-               }
-            },
-            "Pepinillo":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":12,
-                  "Material":"consumible",
-                  "Cantidad":5,
-                  "Demanda":11
-               }
-            },
-            "Cadáver de rata":{
-               "caracteristicas":{
-                  "Precio":1,
-                  "Calidad":1,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":1
-               }
-            }
-         }
+      "Cuchillo láser": {
+        "caracteristicas": {
+          "Precio": 3,
+          "Calidad": 12,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 46
+        }
       }
-   ],
-   [
-      {
-         "nombre":"Pack Morty Style",
-         "calidad":"Premium",
-         "precio":36,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm ",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Gorro de fiesta volador":{
-               "caracteristicas":{
-                  "Precio":8,
-                  "Calidad":49,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":99
-               }
-            },
-            "Píldora teletransportadora":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":37,
-                  "Material":"consumible",
-                  "Cantidad":4,
-                  "Demanda":40
-               }
-            },
-            "Rayo congelador":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":50,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":80
-               }
-            },
-            "Arma de pepinillo Rick":{
-               "caracteristicas":{
-                  "Precio":13,
-                  "Calidad":20,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":90
-               }
-            }
-         }
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Pack Donald Trump",
+    "calidad": "Basic",
+    "precio": 6,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm ",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "AK-47": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 100
+        }
       },
-      {
-         "nombre":"Pack Rick Style ",
-         "calidad":"Premium",
-         "precio":68,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm ",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Pistola de portales":{
-               "caracteristicas":{
-                  "Precio":20,
-                  "Calidad":50,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":60
-               }
-            },
-            "Plumbus":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":46,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":10
-               }
-            },
-            "Evil Morty":{
-               "caracteristicas":{
-                  "Precio":30,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":100
-               }
-            },
-            "Robot mantequillero":{
-               "caracteristicas":{
-                  "Precio":13,
-                  "Calidad":20,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":78
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para niños",
-         "calidad":"Premium",
-         "precio":49,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Chuches especiales con poderes":{
-               "caracteristicas":{
-                  "Precio":30,
-                  "Calidad":43,
-                  "Material":"consumible",
-                  "Cantidad":6,
-                  "Demanda":99
-               }
-            },
-            "Balón anti-gravedad":{
-               "caracteristicas":{
-                  "Precio":7,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":61
-               }
-            },
-            "Cuerda infinita":{
-               "caracteristicas":{
-                  "Precio":8,
-                  "Calidad":23,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":17
-               }
-            },
-            "Crucero espacial de juguete":{
-               "caracteristicas":{
-                  "Precio":4,
-                  "Calidad":47,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":54
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para atronautas",
-         "calidad":"Premium",
-         "precio":60,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Pistola anti marcianos":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":37,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":78
-               }
-            },
-            "Pantalla lunar":{
-               "caracteristicas":{
-                  "Precio":5,
-                  "Calidad":50,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":29
-               }
-            },
-            "Cohete":{
-               "caracteristicas":{
-                  "Precio":30,
-                  "Calidad":50,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":100
-               }
-            },
-            "Crucero espacial estándar":{
-               "caracteristicas":{
-                  "Precio":15,
-                  "Calidad":46,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":59
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para animalistas",
-         "calidad":"Premium",
-         "precio":51,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Ovillos de lana mágicos":{
-               "caracteristicas":{
-                  "Precio":13,
-                  "Calidad":38,
-                  "Material":"normal",
-                  "Cantidad":4,
-                  "Demanda":56
-               }
-            },
-            "Correa de invisibilidad":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":24,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":20
-               }
-            },
-            "Caseta de perrito intergaláctica":{
-               "caracteristicas":{
-                  "Precio":8,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":69
-               }
-            },
-            "Gadget traductor de lenguaje animal a humano":{
-               "caracteristicas":{
-                  "Precio":20,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":100
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para militares",
-         "calidad":"Premium",
-         "precio":67,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Pistola laser":{
-               "caracteristicas":{
-                  "Precio":24,
-                  "Calidad":50,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":99
-               }
-            },
-            "Capa de invisibilidad":{
-               "caracteristicas":{
-                  "Precio":20,
-                  "Calidad":49,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":100
-               }
-            },
-            "Armadura a prueba de todo":{
-               "caracteristicas":{
-                  "Precio":10,
-                  "Calidad":47,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":79
-               }
-            },
-            "Arma de pepinillo Rick":{
-               "caracteristicas":{
-                  "Precio":13,
-                  "Calidad":20,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":90
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack para viajeros",
-         "calidad":"Premium",
-         "precio":55,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Llave intergaláctica":{
-               "caracteristicas":{
-                  "Precio":15,
-                  "Calidad":28,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":45
-               }
-            },
-            "Arma de portal":{
-               "caracteristicas":{
-                  "Precio":13,
-                  "Calidad":27,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":70
-               }
-            },
-            "Píldora teletransportadora":{
-               "caracteristicas":{
-                  "Precio":12,
-                  "Calidad":46,
-                  "Material":"consumible",
-                  "Cantidad":4,
-                  "Demanda":89
-               }
-            },
-            "Crucero espacial estándar":{
-               "caracteristicas":{
-                  "Precio":15,
-                  "Calidad":46,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":59
-               }
-            }
-         }
-      },
-      {
-         "nombre":"Pack diversión",
-         "calidad":"Premium",
-         "precio":52,
-         "vendido":false,
-         "abierto": false,
-         "dimensiones":{
-            "altura":"5 cm",
-            "ancho":"10 cm"
-         },
-         "contenidos":{
-            "Gorro de fiesta volador":{
-               "caracteristicas":{
-                  "Precio":8,
-                  "Calidad":49,
-                  "Material":"indestructible",
-                  "Cantidad":1,
-                  "Demanda":99
-               }
-            },
-            "Balón anti-gravedad":{
-               "caracteristicas":{
-                  "Precio":7,
-                  "Calidad":50,
-                  "Material":"normal",
-                  "Cantidad":1,
-                  "Demanda":61
-               }
-            },
-            "Inyección de felicidad":{
-               "caracteristicas":{
-                  "Precio":30,
-                  "Calidad":100,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":100
-               }
-            },
-            "Poción del amor":{
-               "caracteristicas":{
-                  "Precio":7,
-                  "Calidad":42,
-                  "Material":"consumible",
-                  "Cantidad":1,
-                  "Demanda":61
-               }
-            }
-         }
+      "Bandera nacional": {
+        "caracteristicas": {
+          "Precio": 1,
+          "Calidad": 6,
+          "Material": "normal",
+          "Cantidad": 2,
+          "Demanda": 15
+        }
       }
-   ]
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Pack piscina",
+    "calidad": "Basic",
+    "precio": 12,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "Bañador de invisibilidad": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 12,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 12
+        }
+      },
+      "Flotador volador con forma de pato": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": 30,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 0
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Pack brujas",
+    "calidad": "Basic",
+    "precio": 6,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "Poción del arcoiris": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": 20,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 63
+        }
+      },
+      "Poción del amor": {
+        "caracteristicas": {
+          "Precio": 4,
+          "Calidad": 20,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 12
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Pack para maquilladores",
+    "calidad": "Basic",
+    "precio": 4,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "Colorete": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": 20,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 73
+        }
+      },
+      "Labial": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 13
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Pack para niño low-cost",
+    "calidad": "Basic",
+    "precio": 5,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "Chuches corrientes sin poderes": {
+        "caracteristicas": {
+          "Precio": 3,
+          "Calidad": 10,
+          "Material": "consumible",
+          "Cantidad": 10,
+          "Demanda": 48
+        }
+      },
+      "Gorro de fiesta sin más": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": 48,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 12
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Pack para Payasos",
+    "calidad": "Basic",
+    "precio": 3,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "3 cm ",
+      "ancho": "6 cm"
+    },
+    "contenidos": {
+      "Nariz de Payaso": {
+        "caracteristicas": {
+          "Precio": 1,
+          "Calidad": 1,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 1
+        }
+      },
+      "Peluca de Payaso": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": 15,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 13
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Pack Meeseek",
+    "calidad": "Standard",
+    "precio": 19,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm ",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Meeseeks box": {
+        "caracteristicas": {
+          "Precio": 15,
+          "Calidad": 50,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 90
+        }
+      },
+      "Revolver": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": "12",
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 5
+        }
+      },
+      "Escoba": {
+        "caracteristicas": {
+          "Precio": 2,
+          "Calidad": "normal",
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 12
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Pack Microscopico",
+    "calidad": "Standard",
+    "precio": 20,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Bateria Miniverso": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 10,
+          "Material": "normal",
+          "Cantidad": 2,
+          "Demanda": 10
+        }
+      },
+      "Parque de atracciones indestinal": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 72
+        }
+      },
+      "Encogedor": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 24,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 52
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Pack Covid",
+    "calidad": "Standard",
+    "precio": 25,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm ",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Cura del Covid": {
+        "caracteristicas": {
+          "Precio": 15,
+          "Calidad": 1,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 57
+        }
+      },
+      "ADN paciente 0": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 30,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 60
+        }
+      },
+      "Desinfectante": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 33,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 6
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Pack Guerra Galáctica",
+    "calidad": "Standard",
+    "precio": 25,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Droide R2-P2": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 90
+        }
+      },
+      "Sable de plasma": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 20,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 72
+        }
+      },
+      "Pistola San Holo": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 10,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 72
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Pack Terricola",
+    "calidad": "Standard",
+    "precio": 16,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Album Maluma": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 33,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 6
+        }
+      },
+      "Autografo David Gelpi": {
+        "caracteristicas": {
+          "Precio": 6,
+          "Calidad": 25,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 6
+        }
+      },
+      "Resido nuclear": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 33,
+          "Material": "consumible",
+          "Cantidad": 2,
+          "Demanda": 95
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "nombre": "Pack Informatico",
+    "calidad": "Standard",
+    "precio": 18,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Libro Python de la rata espacial": {
+        "caracteristicas": {
+          "Precio": 3,
+          "Calidad": 12,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 46
+        }
+      },
+      "Disco duro 500 Yottabytes": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 1,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 90
+        }
+      },
+      "Guia Github": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 12,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 12
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "nombre": "Pack AdultSwim",
+    "calidad": "Standard",
+    "precio": 27,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm ",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Blu-ray Temporada 3 Rick y Morty": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 12,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 23
+        }
+      },
+      "Autografo Bruce Taylor": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 22,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 54
+        }
+      },
+      "FLCL Blu-ray edición coleccionista": {
+        "caracteristicas": {
+          "Precio": 12,
+          "Calidad": 50,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 45
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "nombre": "Pack PickleRick",
+    "calidad": "Standard",
+    "precio": 16,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "4 cm ",
+      "ancho": "8 cm"
+    },
+    "contenidos": {
+      "Peluche Pickle Rick": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 12,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 12
+        }
+      },
+      "Pepinillo": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 12,
+          "Material": "consumible",
+          "Cantidad": 5,
+          "Demanda": 11
+        }
+      },
+      "Cadáver de rata": {
+        "caracteristicas": {
+          "Precio": 1,
+          "Calidad": 1,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 1
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "nombre": "Pack Morty Style",
+    "calidad": "Premium",
+    "precio": 36,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm ",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Gorro de fiesta volador": {
+        "caracteristicas": {
+          "Precio": 8,
+          "Calidad": 49,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 99
+        }
+      },
+      "Píldora teletransportadora": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 37,
+          "Material": "consumible",
+          "Cantidad": 4,
+          "Demanda": 40
+        }
+      },
+      "Rayo congelador": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 50,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 80
+        }
+      },
+      "Arma de pepinillo Rick": {
+        "caracteristicas": {
+          "Precio": 13,
+          "Calidad": 20,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 90
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "nombre": "Pack Rick Style ",
+    "calidad": "Premium",
+    "precio": 68,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm ",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Pistola de portales": {
+        "caracteristicas": {
+          "Precio": 20,
+          "Calidad": 50,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 60
+        }
+      },
+      "Plumbus": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 46,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 10
+        }
+      },
+      "Evil Morty": {
+        "caracteristicas": {
+          "Precio": 30,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 100
+        }
+      },
+      "Robot mantequillero": {
+        "caracteristicas": {
+          "Precio": 13,
+          "Calidad": 20,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 78
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "nombre": "Pack para niños",
+    "calidad": "Premium",
+    "precio": 49,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Chuches especiales con poderes": {
+        "caracteristicas": {
+          "Precio": 30,
+          "Calidad": 43,
+          "Material": "consumible",
+          "Cantidad": 6,
+          "Demanda": 99
+        }
+      },
+      "Balón anti-gravedad": {
+        "caracteristicas": {
+          "Precio": 7,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 61
+        }
+      },
+      "Cuerda infinita": {
+        "caracteristicas": {
+          "Precio": 8,
+          "Calidad": 23,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 17
+        }
+      },
+      "Crucero espacial de juguete": {
+        "caracteristicas": {
+          "Precio": 4,
+          "Calidad": 47,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 54
+        }
+      }
+    }
+  },
+  {
+    "id": 20,
+    "nombre": "Pack para atronautas",
+    "calidad": "Premium",
+    "precio": 60,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Pistola anti marcianos": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 37,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 78
+        }
+      },
+      "Pantalla lunar": {
+        "caracteristicas": {
+          "Precio": 5,
+          "Calidad": 50,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 29
+        }
+      },
+      "Cohete": {
+        "caracteristicas": {
+          "Precio": 30,
+          "Calidad": 50,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 100
+        }
+      },
+      "Crucero espacial estándar": {
+        "caracteristicas": {
+          "Precio": 15,
+          "Calidad": 46,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 59
+        }
+      }
+    }
+  },
+  {
+    "id": 21,
+    "nombre": "Pack para animalistas",
+    "calidad": "Premium",
+    "precio": 51,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Ovillos de lana mágicos": {
+        "caracteristicas": {
+          "Precio": 13,
+          "Calidad": 38,
+          "Material": "normal",
+          "Cantidad": 4,
+          "Demanda": 56
+        }
+      },
+      "Correa de invisibilidad": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 24,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 20
+        }
+      },
+      "Caseta de perrito intergaláctica": {
+        "caracteristicas": {
+          "Precio": 8,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 69
+        }
+      },
+      "Gadget traductor de lenguaje animal a humano": {
+        "caracteristicas": {
+          "Precio": 20,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 100
+        }
+      }
+    }
+  },
+  {
+    "id": 22,
+    "nombre": "Pack para militares",
+    "calidad": "Premium",
+    "precio": 67,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Pistola laser": {
+        "caracteristicas": {
+          "Precio": 24,
+          "Calidad": 50,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 99
+        }
+      },
+      "Capa de invisibilidad": {
+        "caracteristicas": {
+          "Precio": 20,
+          "Calidad": 49,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 100
+        }
+      },
+      "Armadura a prueba de todo": {
+        "caracteristicas": {
+          "Precio": 10,
+          "Calidad": 47,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 79
+        }
+      },
+      "Arma de pepinillo Rick": {
+        "caracteristicas": {
+          "Precio": 13,
+          "Calidad": 20,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 90
+        }
+      }
+    }
+  },
+  {
+    "id": 23,
+    "nombre": "Pack para viajeros",
+    "calidad": "Premium",
+    "precio": 55,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Llave intergaláctica": {
+        "caracteristicas": {
+          "Precio": 15,
+          "Calidad": 28,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 45
+        }
+      },
+      "Arma de portal": {
+        "caracteristicas": {
+          "Precio": 13,
+          "Calidad": 27,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 70
+        }
+      },
+      "Píldora teletransportadora": {
+        "caracteristicas": {
+          "Precio": 12,
+          "Calidad": 46,
+          "Material": "consumible",
+          "Cantidad": 4,
+          "Demanda": 89
+        }
+      },
+      "Crucero espacial estándar": {
+        "caracteristicas": {
+          "Precio": 15,
+          "Calidad": 46,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 59
+        }
+      }
+    }
+  },
+  {
+    "id": 24,
+    "nombre": "Pack diversión",
+    "calidad": "Premium",
+    "precio": 52,
+    "vendido": false,
+    "abierto": false,
+    "dimensiones": {
+      "altura": "5 cm",
+      "ancho": "10 cm"
+    },
+    "contenidos": {
+      "Gorro de fiesta volador": {
+        "caracteristicas": {
+          "Precio": 8,
+          "Calidad": 49,
+          "Material": "indestructible",
+          "Cantidad": 1,
+          "Demanda": 99
+        }
+      },
+      "Balón anti-gravedad": {
+        "caracteristicas": {
+          "Precio": 7,
+          "Calidad": 50,
+          "Material": "normal",
+          "Cantidad": 1,
+          "Demanda": 61
+        }
+      },
+      "Inyección de felicidad": {
+        "caracteristicas": {
+          "Precio": 30,
+          "Calidad": 100,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 100
+        }
+      },
+      "Poción del amor": {
+        "caracteristicas": {
+          "Precio": 7,
+          "Calidad": 42,
+          "Material": "consumible",
+          "Cantidad": 1,
+          "Demanda": 61
+        }
+      }
+    }
+  }
 ]
