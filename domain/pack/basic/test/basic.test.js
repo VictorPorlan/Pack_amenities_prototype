@@ -3,7 +3,8 @@ requirePack = require('../../pack')
 Pack = requirePack.class
 
 test('Crear pack Basic', ()=> {
-    expect(basicFactory.basic.getBasic('Pack Basic', 10).nombre).toBe("Pack Basic");
+    let packBasic = basicFactory.basic.getBasic('Pack Basic', 10)
+    expect(packBasic.nombre).toEqual('Pack Basic')
 })
 
 test('Herencia de Pack', () => {
@@ -20,8 +21,10 @@ test('Abrir un pack', () => {
     let packBasic = basicFactory.basic.getBasic('Pack Basic', 10)
     //Compruebo que no se puede abrir hasta que no se haya vendido
     expect(packBasic.abrir).toBeUndefined()
-    packBasic.vender()
+    expect(packBasic.abierto).toBeFalsy()
     //La función vender crea un closure que te permite abrir el paquete
+    packBasic.vender()
+    expect(packBasic.abrir).toBeDefined()
     packBasic.abrir()
     expect(packBasic.abierto).toBe(true)
 })
