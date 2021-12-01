@@ -2,8 +2,8 @@ requirePack = require('../pack')
 protoPack = requirePack.proto
 Pack = requirePack.class
 
-function Basic(nombre, precio) {
-    Pack.call(this, nombre, precio);
+function Basic(nombre, precio, contenido) {
+    Pack.call(this, nombre, precio, contenido);
     // this.contenidos = contenidos
   }
   
@@ -11,8 +11,8 @@ function Basic(nombre, precio) {
 
   var factory = (function singleBasic() {
     return {
-        getBasic: function getBasic(price, precio, extraFee) {
-        return new Basic(price, precio, extraFee);
+        getBasic: function getBasic(price, precio, contenido) {
+        return new Basic(price, precio, contenido);
       },
     };
   })();

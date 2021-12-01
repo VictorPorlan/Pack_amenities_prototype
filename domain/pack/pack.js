@@ -1,6 +1,7 @@
-function Pack(nombre, precio) {
+function Pack(nombre, precio, contenido) {
     this.nombre = nombre
     this.precio = precio
+    this.contenido = contenido
     this.abierto = false
 }
 
@@ -11,6 +12,12 @@ Pack.prototype.getName = function () {
 Pack.prototype.getPrecio = function () {
   return this.precio;
 };
+
+Pack.prototype.usarItems = function () {
+  this.contenido.forEach(item => {
+    item.usarItem()
+  });
+}
 
 Pack.prototype.vender = function () {
   let closureAbrir = function() {

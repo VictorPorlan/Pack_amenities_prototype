@@ -2,9 +2,8 @@ requirePack = require('../pack')
 protoPack = requirePack.proto
 Pack = requirePack.class
 
-function Standard(nombre, precio) {
-    Pack.call(this, nombre, precio);
-    // this.contenidos = contenidos
+function Standard(nombre, precio, contenido) {
+    Pack.call(this, nombre, precio, contenido);
   }
   
   Standard.prototype = Object.create(protoPack)
@@ -15,8 +14,8 @@ function Standard(nombre, precio) {
 
   var factory = (function singleStandard() {
     return {
-        getStandard: function getStandard(price, precio, extraFee) {
-        return new Standard(price, precio, extraFee);
+        getStandard: function getStandard(price, precio, contenido) {
+        return new Standard(price, precio, contenido);
       },
     };
   })();
