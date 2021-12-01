@@ -4,8 +4,6 @@ Pack = requirePack.class
 
 function Basic(nombre, precio) {
     Pack.call(this, nombre, precio);
-    this.precio = precio;
-    this.abierto = false
     // this.contenidos = contenidos
   }
   

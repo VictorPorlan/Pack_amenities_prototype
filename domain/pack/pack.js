@@ -13,13 +13,13 @@ Pack.prototype.getPrecio = function () {
 };
 
 Pack.prototype.vender = function () {
-  let funcionAbrir = function() {
+  let closureAbrir = function() {
     function abrirPack(){ 
         this.abierto = true
     }
     return abrirPack;
 };
-  this.abrir = funcionAbrir()
+  this.abrir = closureAbrir()
   return this.getPrecio()
 }
 
