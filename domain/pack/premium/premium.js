@@ -5,12 +5,15 @@ Pack = requirePack.class
 function Premium(nombre, precio) {
     Pack.call(this, nombre, precio);
     this.precio = precio;
-    this.extraFee = 5;
     this.abierto = false
     // this.contenidos = contenidos
   }
   
   Premium.prototype = Object.create(protoPack)
+
+  Premium.prototype.getPrecio = function () {
+    return this.precio + 5
+  }
 
   var factory = (function singlePremium() {
     return {

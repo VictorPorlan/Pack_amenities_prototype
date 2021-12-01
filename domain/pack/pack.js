@@ -20,7 +20,7 @@ Pack.prototype.vender = function () {
     return abrirPack;
 };
   this.abrir = funcionAbrir()
-  return this.precio + this.extraFee
+  return this.getPrecio()
 }
 
 exports.proto = Pack.prototype;

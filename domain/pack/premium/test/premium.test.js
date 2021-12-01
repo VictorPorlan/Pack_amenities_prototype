@@ -1,5 +1,5 @@
 premiumFactory = require('../premium')
-requirePack = require('../pack')
+requirePack = require('../../pack')
 Pack = requirePack.class
 
 test('Crear pack Premium', ()=> {
