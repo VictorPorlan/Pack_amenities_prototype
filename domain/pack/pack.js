@@ -1,8 +1,10 @@
-function Pack(nombre, precio, contenido) {
-    this.nombre = nombre
-    this.precio = precio
-    this.contenido = contenido
-    this.abierto = false
+function Pack(nombre, precio, abierto, vendido, contenido) {
+  this.nombre = nombre;
+  this.precio = precio;
+  this.abierto = abierto;
+  this.vendido = vendido;
+  this.contenido = contenido;
+  this.extraFee = 0;
 }
 
 Pack.prototype.getName = function () {
@@ -13,23 +15,50 @@ Pack.prototype.getPrecio = function () {
   return this.precio;
 };
 
+Pack.prototype.getExtraFee = function () {
+  return this.extraFee;
+};
+
+Pack.prototype.recalcularPrecioPack = function () {
+  if (this.contenido != undefined) {
+    let precioTotalItems = this.contenido.map((x) => {
+      x.recalcularPrecio(),
+      {nombre , precio, ...rest} = x
+      return precio
+    }
+    ).reduce((a, b) => a + b);
+    return precioTotalItems + this.extraFee;
+  }
+};
+
 Pack.prototype.usarItems = function () {
-  this.contenido.forEach(item => {
-    item.usarItem()
-  });
-}
+  if (this.abierto) {
+    this.contenido.forEach((item) => {
+      item.usarItem();
+    });
+  }
+};
+
+Pack.prototype.usarItemIndex = function (index) {
+  if (this.abierto) {
+    this.contenido[index].usarItem();
+  }
+};
 
 Pack.prototype.vender = function () {
-  let closureAbrir = function() {
-    function abrirPack(){ 
-        this.abierto = true
-    }
-    return abrirPack;
+  if (!this.vendido) {
+    this.vendido = true;
+    let closureAbrir = function () {
+      function abrirPack() {
+        this.abierto = true;
+      }
+      return abrirPack;
+    };
+    this.abrir = closureAbrir();
+    this.precio = this.recalcularPrecioPack();
+    return this.precio;
+  }
 };
-  this.abrir = closureAbrir()
-  return this.getPrecio()
-}
 
 exports.proto = Pack.prototype;
 exports.class = Pack;
-

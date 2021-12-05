@@ -10,20 +10,6 @@ test('Crear item Normal', ()=> {
     expect(itemNormal.calidad).toBe(50)
 })
 
-test('Recalcular precio', () => {
-    itemNormal = normalFactory.normal.getNormal('Item Normal', 5, 100, 50)
-    itemNormal.recalcularPrecio()
-    expect(itemNormal.precio).toBe(10)
-    //Compruebo otros casos
-    itemNormal2 = normalFactory.normal.getNormal('Item Normal2', 5, 50, 50)
-    itemNormal2.recalcularPrecio()
-    expect(itemNormal2.precio).toBe(7.5)
-
-    itemNormal3 = normalFactory.normal.getNormal('Item Normal2', 5, 0, 50)
-    itemNormal3.recalcularPrecio()
-    expect(itemNormal3.precio).toBe(5)
-})
-
 test('Usar item', () => {
     itemNormal = normalFactory.normal.getNormal('Item Normal', 5, 100, 50)
     itemNormal.usarItem()

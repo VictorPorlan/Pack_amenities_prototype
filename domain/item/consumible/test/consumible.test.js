@@ -10,20 +10,6 @@ test('Crear item Consumible', ()=> {
     expect(itemConsumible.calidad).toBe(50)
 })
 
-test('Recalcular precio', () => {
-    itemConsumible = consumibleFactory.consumible.getConsumible('Item Consumible', 5, 100, 50)
-    itemConsumible.recalcularPrecio()
-    expect(itemConsumible.precio).toBe(10)
-    //Compruebo otros casos
-    itemConsumible2 = consumibleFactory.consumible.getConsumible('Item Consumible2', 5, 50, 50)
-    itemConsumible2.recalcularPrecio()
-    expect(itemConsumible2.precio).toBe(7.5)
-
-    itemConsumible3 = consumibleFactory.consumible.getConsumible('Item Consumible2', 5, 0, 50)
-    itemConsumible3.recalcularPrecio()
-    expect(itemConsumible3.precio).toBe(5)
-})
-
 test('Usar item', () => {
     itemConsumible = consumibleFactory.consumible.getConsumible('Item Consumible', 5, 100, 50)
     itemConsumible.usarItem()

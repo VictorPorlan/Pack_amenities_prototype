@@ -7,11 +7,11 @@ requireItemIndestructible = require("../../../item/indestructible/indestructible
 Pack = requirePack.class
 
 beforeEach(async () => {
-    packPremium =  premiumFactory.premium.getPremium("Pack Premium", 10, [
-        requireItemNormal.normal.getNormal("Item Normal 1", 3, 50, 50),
-        requireItemNormal.normal.getNormal("Item Normal 2", 3, 50, 50),
-        requireItemNormal.normal.getNormal("Item Normal 3", 3, 50, 50),
-        requireItemNormal.normal.getNormal("Item Normal 4", 3, 50, 50),
+    packPremium =  premiumFactory.premium.getPremium("Pack Premium", 10, false, false, [
+        requireItemNormal.normal.getNormal("Item Normal 1", 3, 0, 50),
+        requireItemNormal.normal.getNormal("Item Normal 2", 3, 0, 50),
+        requireItemNormal.normal.getNormal("Item Normal 3", 3, 0, 50),
+        requireItemNormal.normal.getNormal("Item Normal 4", 3, 0, 50),
       ])
   })
 
@@ -25,5 +25,9 @@ test('Herencia de Pack', () => {
 })
 
 test('Vender un pack', () => {
-   expect(packPremium.vender()).toBe(15)
+   expect(packPremium.vender()).toBe(17)
 })
+
+test('Vender un pack', () => {
+    expect(packPremium.vender()).toBe(17)
+ })
