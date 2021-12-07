@@ -4,16 +4,25 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var Packs = require('./models/packs')
+var data = require('./data/data.json')
 
 // Conexion a mongodb
+// Pongo la uri de la conexión a palo para evitar problemas, a la hora de 
+// probarlo será más comodo si no hay que tocar nada de .env
 var mongoose = require('mongoose');
-var mongoDB = `mongodb+srv://packs:packs@packs.gvt0s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+var mongoDB = `mongodb+srv://packs:packs@packs.gvt0s.mongodb.net/packs?retryWrites=true&w=majority`;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
+//Reiniciar y poblar la colección al iniciar la API
+Packs.collection.deleteMany({})
+Packs.collection.insertMany(data)
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var packRouter = require('./routes/pack');
 
 var app = express();
 
@@ -27,6 +36,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/packs', packRouter)
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

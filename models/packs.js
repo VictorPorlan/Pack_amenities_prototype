@@ -8,7 +8,7 @@ var packSchema = new Schema(
         precio: Number,
         abierto: Boolean,
         vendido: Boolean,
-        contenido: [],
+        contenidos: [],
     }
 )
 module.exports = mongoose.model('Packs', packSchema)
