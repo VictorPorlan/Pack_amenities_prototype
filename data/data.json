@@ -10,7 +10,7 @@
       "altura": "3 cm",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
         {
           "Nombre": "Rifle de pulso",
           "Precio": 5,
@@ -40,7 +40,7 @@
       "altura": "3 cm ",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Rifle de pulso",
         "Precio": 5,
@@ -70,7 +70,7 @@
       "altura": "3 cm ",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "AK47",
         "Precio": 1,
@@ -100,7 +100,7 @@
       "altura": "3 cm",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Bañador de invisibilidad",
         "Precio": 5,
@@ -130,7 +130,7 @@
       "altura": "3 cm",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Poción de arcoiris",
         "Precio": 3,
@@ -160,7 +160,7 @@
       "altura": "3 cm",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Colorete",
         "Precio": 2,
@@ -190,7 +190,7 @@
       "altura": "3 cm",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Chuches corrientes sin poderes",
         "Precio": 2,
@@ -220,7 +220,7 @@
       "altura": "3 cm ",
       "ancho": "6 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Nariz de payaso",
         "Precio": 1,
@@ -250,7 +250,7 @@
       "altura": "4 cm ",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Meeseek box",
         "Precio": 10,
@@ -288,7 +288,7 @@
       "altura": "4 cm",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Bateria microverso",
         "Precio": 10,
@@ -326,7 +326,7 @@
       "altura": "4 cm ",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Cura del covid",
         "Precio": 10,
@@ -364,7 +364,7 @@
       "altura": "4 cm",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "R2P2",
         "Precio": 10,
@@ -402,7 +402,7 @@
       "altura": "4 cm",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Fariña",
         "Precio": 10,
@@ -440,7 +440,7 @@
       "altura": "4 cm",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Libro de python de la rata espacial",
         "Precio": 5,
@@ -479,7 +479,7 @@
       "altura": "4 cm ",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Blu-Ray Rick y Morty",
         "Precio": 5,
@@ -517,7 +517,7 @@
       "altura": "4 cm ",
       "ancho": "8 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Peluche Pickle Rick",
         "Precio": 7,
@@ -556,7 +556,7 @@
       "altura": "5 cm ",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Paquete de pañuelos",
         "Precio": 10,
@@ -602,7 +602,7 @@
       "altura": "5 cm ",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Pistola de portales",
         "Precio": 30,
@@ -648,7 +648,7 @@
       "altura": "5 cm",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Gominolas con poderes",
         "Precio": 10,
@@ -694,7 +694,7 @@
       "altura": "5 cm",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Pistola anti-marcianos",
         "Precio": 10,
@@ -739,7 +739,7 @@
       "altura": "5 cm",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Diccionario perro-humano",
         "Precio": 5,
@@ -785,7 +785,7 @@
       "altura": "5 cm",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Armadura resistente a todo",
         "Precio": 7,
@@ -831,7 +831,7 @@
       "altura": "5 cm",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "LLave mágica",
         "Precio": 10,
@@ -877,7 +877,7 @@
       "altura": "5 cm",
       "ancho": "10 cm"
     },
-    "contenidos": [
+    "contenido": [
       {
         "Nombre": "Pastillas de felicidad",
         "Precio": 3,

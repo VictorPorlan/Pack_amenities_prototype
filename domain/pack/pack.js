@@ -37,12 +37,23 @@ Pack.prototype.usarItems = function () {
       item.usarItem();
     });
   }
+  this.contenido.forEach((x) => {
+    if(x.calidad == 0) {
+      if(x.cantidad > 1){
+        x.cantidad  = cantidad-1
+      }
+      else{
+        this.contenido.splice(this.contenido.indexOf(x), 1)
+      }
+    }
+  })
 };
 
 Pack.prototype.usarItemIndex = function (index) {
   if (this.abierto) {
     this.contenido[index].usarItem();
   }
+  
 };
 
 Pack.prototype.vender = function () {

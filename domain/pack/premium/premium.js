@@ -5,7 +5,6 @@ Pack = requirePack.class
 function Premium(nombre, precio, abierto, vendido, contenido) {
   Pack.call(this, nombre, precio, abierto, vendido, contenido);
   this.extraFee = 5
-    // this.contenidos = contenidos
   }
   
   Premium.prototype = Object.create(protoPack)

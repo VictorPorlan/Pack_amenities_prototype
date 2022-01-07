@@ -12,4 +12,10 @@ router.get('/allPacks', packController.packAPI.findAllPacks)
 
 router.delete('/delete/:id', packController.packAPI.deletePack)
 
+router.post('/create', packController.packAPI.createPack)
+
+router.get('/buy/:id', packController.packAPI.buyPack)
+
+router.get('/open/:id', packController.packAPI.openPack)
+
 module.exports = router
