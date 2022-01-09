@@ -1,9 +1,9 @@
-function Pack(nombre, precio, abierto, vendido, contenido) {
+function Pack(nombre, precio, abierto, vendido, items) {
   this.nombre = nombre;
   this.precio = precio;
   this.abierto = abierto;
   this.vendido = vendido;
-  this.contenido = contenido;
+  this.items = items;
   this.extraFee = 0;
 }
 
@@ -20,8 +20,9 @@ Pack.prototype.getExtraFee = function () {
 };
 
 Pack.prototype.recalcularPrecioPack = function () {
-  if (this.contenido != undefined) {
-    let precioTotalItems = this.contenido.map((x) => {
+  if (this.items != undefined) {
+    
+    let precioTotalItems = this.items.map((x) => {
       x.recalcularPrecio(),
       {nombre , precio, ...rest} = x
       return precio
@@ -33,27 +34,24 @@ Pack.prototype.recalcularPrecioPack = function () {
 
 Pack.prototype.usarItems = function () {
   if (this.abierto) {
-    this.contenido.forEach((item) => {
+    this.items.forEach((item) => {
       item.usarItem();
     });
   }
-  this.contenido.forEach((x) => {
+  this.items.forEach((x) => {
     if(x.calidad == 0) {
-      if(x.cantidad > 1){
-        x.cantidad  = cantidad-1
-      }
-      else{
-        this.contenido.splice(this.contenido.indexOf(x), 1)
-      }
+        this.items.splice(this.items.indexOf(x), 1)
     }
   })
 };
 
 Pack.prototype.usarItemIndex = function (index) {
   if (this.abierto) {
-    this.contenido[index].usarItem();
+    this.items[index].usarItem();
+    if(this.items[index] == 0) {
+      this.items.splice(index, 1)
   }
-  
+  }
 };
 
 Pack.prototype.vender = function () {

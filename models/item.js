@@ -4,14 +4,15 @@ var Schema = mongoose.Schema;
 
 var itemSchema = new Schema(
     {
-     nombre: String,
-     precio: Number,
+    nombre: String,
+    precio: Number,
     demanda: Number,
-    calidad: Number
+    material: String,
+    calidad: Number,
+    cantidad: Number
+    },
+    {
+        versionKey: false
     }
 )
-
-itemSchema.pre(['find', 'findOne'], function() {
-    this.select('_id nombre precio demanda calidad')
-})
 module.exports = mongoose.model('Item', itemSchema)

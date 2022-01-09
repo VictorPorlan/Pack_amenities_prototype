@@ -8,14 +8,20 @@ router.use(function (req, res, next) {
 
     next();
   })
+router.get('/findOne/:nombre', packController.packAPI.findName)
+
 router.get('/allPacks', packController.packAPI.findAllPacks)
 
 router.delete('/delete/:id', packController.packAPI.deletePack)
 
 router.post('/create', packController.packAPI.createPack)
 
-router.get('/buy/:id', packController.packAPI.buyPack)
+router.get('/buy/:nombre', packController.packAPI.buyPack)
 
 router.get('/open/:id', packController.packAPI.openPack)
+
+router.get('/useItems/:nombre', packController.packAPI.useItems)
+
+router.get('/useItem/:nombre/:index', packController.packAPI.useItem)
 
 module.exports = router

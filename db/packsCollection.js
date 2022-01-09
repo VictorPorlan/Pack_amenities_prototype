@@ -4,10 +4,10 @@ module.exports = [
     _id: ObjectId("61afc35457387547a0c0f6d1"),
     nombre: "Pack animales",
     precio: 50,
-    calidad: "premium",
-    "vendido": false,
-    "abierto": false,
-    contenido: [
+    calidad: "Premium",
+    "vendido": true,
+    "abierto": true,
+    items: [
       ObjectId("61d58b6fd75d3770be591ce0"),
       ObjectId("61d58aecd75d3770be584aed"),
       ObjectId("61d58b6fd75d3770be591ce0"),
@@ -21,7 +21,7 @@ module.exports = [
     precio: 5.95,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d58aa1d75d3770be579cb8"),
       ObjectId("61d58b99d75d3770be596747"),
     ],
@@ -33,7 +33,7 @@ module.exports = [
     precio: 6.8,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d58aa1d75d3770be579cb8"),
       ObjectId("61d5b658d75d3770bea7d502"),
     ],
@@ -45,7 +45,7 @@ module.exports = [
     precio: 72.25,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3110"),
       ObjectId("61d594e784f9c213962d3111"),
     ],
@@ -57,7 +57,7 @@ module.exports = [
     precio: 45.05,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3112"),
       ObjectId("61d594e784f9c213962d3113"),
     ],
@@ -69,7 +69,7 @@ module.exports = [
     precio: 8.5,
     "abierto": false,
     "vendido": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3114"),
       ObjectId("61d594e784f9c213962d3115"),
     ],
@@ -81,7 +81,7 @@ module.exports = [
     precio: 17,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3116"),
       ObjectId("61d594e784f9c213962d3117"),
       ObjectId("61d594e784f9c213962d3118"),
@@ -94,7 +94,7 @@ module.exports = [
     precio: 17,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3119"),
       ObjectId("61d594e784f9c213962d311a"),
       ObjectId("61d594e784f9c213962d311b"),
@@ -107,7 +107,7 @@ module.exports = [
     precio: 3.4,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d311c"),
       ObjectId("61d594e784f9c213962d311d"),
     ],
@@ -119,7 +119,7 @@ module.exports = [
     precio: 4.25,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d311e"),
       ObjectId("61d594e784f9c213962d311f"),
     ],
@@ -131,7 +131,7 @@ module.exports = [
     precio: 2.55,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3120"),
       ObjectId("61d594e784f9c213962d3121"),
     ],
@@ -143,7 +143,7 @@ module.exports = [
     precio: 16.15,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3122"),
       ObjectId("61d594e784f9c213962d3123"),
       ObjectId("61d594e784f9c213962d3124"),
@@ -156,7 +156,7 @@ module.exports = [
     precio: 21.25,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3125"),
       ObjectId("61d594e784f9c213962d3126"),
       ObjectId("61d594e784f9c213962d3127"),
@@ -169,7 +169,7 @@ module.exports = [
     precio: 21.25,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d312b"),
       ObjectId("61d594e784f9c213962d312c"),
       ObjectId("61d594e784f9c213962d312d"),
@@ -182,7 +182,7 @@ module.exports = [
     precio: 49.3,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d312e"),
       ObjectId("61d594e784f9c213962d312f"),
       ObjectId("61d594e784f9c213962d3130"),
@@ -196,7 +196,7 @@ module.exports = [
     precio: 21.25,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3134"),
       ObjectId("61d594e784f9c213962d3135"),
       ObjectId("61d594e784f9c213962d3136"),
@@ -209,7 +209,7 @@ module.exports = [
     precio: 26.35,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3137"),
       ObjectId("61d594e784f9c213962d3138"),
       ObjectId("61d594e784f9c213962d3139"),
@@ -223,7 +223,7 @@ module.exports = [
     precio: 41.65,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d313f"),
       ObjectId("61d594e784f9c213962d3140"),
       ObjectId("61d594e784f9c213962d3141"),
@@ -237,7 +237,7 @@ module.exports = [
     precio: 51,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3143"),
       ObjectId("61d594e784f9c213962d3144"),
       ObjectId("61d594e784f9c213962d3145"),
@@ -251,7 +251,7 @@ module.exports = [
     precio: 43.35,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d594e784f9c213962d3147"),
       ObjectId("61d594e784f9c213962d3148"),
       ObjectId("61d594e784f9c213962d3149"),
@@ -260,12 +260,12 @@ module.exports = [
   },
   {
     _id: ObjectId("61afbb1396fa4c8802fe4201"),
-    calidad: "premium",
+    calidad: "Premium",
     nombre: "Pack1",
     precio: 40,
     "vendido": false,
     "abierto": false,
-    contenido: [
+    items: [
       ObjectId("61d58b6fd75d3770be591ce0"),
       ObjectId("61d594e784f9c213962d314f"),
       ObjectId("61d594e784f9c213962d314d"),

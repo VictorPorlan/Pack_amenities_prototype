@@ -27,11 +27,11 @@ test("Abrir un pack", () => {
 test("usarItems() todos los items a la vez", () => {
   packStandard.vender();
   packStandard.abrir();
-  expect(Array.isArray(packStandard.contenido)).toBe(true);
-  expect(packStandard.contenido[0].nombre).toBe("Item Normal 1");
+  expect(Array.isArray(packStandard.items)).toBe(true);
+  expect(packStandard.items[0].nombre).toBe("Item Normal 1");
   packStandard.usarItems();
   // Comprobamos que la calidad de los items ha bajado correctamente
-  packStandard.contenido.forEach((x) => {
+  packStandard.items.forEach((x) => {
     expect(x.calidad).toBe(49);
   });
 });
@@ -40,29 +40,28 @@ test("usarItemIndex() un item por index", () => {
   packStandard.vender();
   packStandard.abrir();
   packStandard.usarItemIndex(0);
-  expect(packStandard.contenido[0].calidad).toBe(49);
-  expect(packStandard.contenido[1].calidad).toBe(50);
-  expect(packStandard.contenido[2].calidad).toBe(50);
+  expect(packStandard.items[0].calidad).toBe(49);
+  expect(packStandard.items[1].calidad).toBe(50);
+  expect(packStandard.items[2].calidad).toBe(50);
 });
 
-test("usarItems consumibles e indestructibles", () => {
+test("usarItems consumibles, indestructibles y normales", () => {
   let packStandard = standardFactory.standard.getStandard("Pack Standard", 10, false, false, [
-    requireItemConsumible.consumible.getConsumible("Item Consumible 1", 3, 0, 50),
-    requireItemConsumible.consumible.getConsumible("Item Consumible 2", 3, 0, 50),
-    requireItemIndestructible.indestructible.getIndestructible("Item Indestructible 3", 3, 0, 50),
+    requireItemNormal.normal.getNormal("Item Normal", 3, 0, 50),
+    requireItemIndestructible.indestructible.getIndestructible("Item Indestructible", 3, 0, 50),
+    requireItemConsumible.consumible.getConsumible("Item Consumible", 3, 0, 50),
   ]);
   packStandard.vender()
   packStandard.abrir()
-  //Compruebo que usarItemIndex baja a 0 la calidad de un consumible
   packStandard.usarItemIndex(0)
-  expect(packStandard.contenido[0].calidad).toBe(0)
+  expect(packStandard.items[0].calidad).toBe(49)
 
-  //Compruebo que usarItems baja a 0 la de un consumible y deja igual la de un indestructible
+  //Compruebo que usarItems elimina un consumible y deja igual la de un indestructible
   packStandard.usarItems()
-  expect(packStandard.contenido[1].calidad).toBe(0)
-  expect(packStandard.contenido[2].calidad).toBe(50)
+  expect(packStandard.items.length).toBe(2)
+  expect(packStandard.items[1].calidad).toBe(50)
 
   //Compruebo que usarItemIndex deja igual la calidad de un indestructible
-  packStandard.usarItemIndex(2)
-  expect(packStandard.contenido[2].calidad).toBe(50)
+  packStandard.usarItemIndex(1)
+  expect(packStandard.items[1].calidad).toBe(50)
 });
