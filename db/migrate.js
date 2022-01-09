@@ -24,7 +24,7 @@ async function run() {
         let numItemsDocs = await items.estimatedDocumentCount();
         if (numItemsDocs > 0) {
             await items.drop().then((successMessage) => {
-                console.log("Droped items " + successMessage);
+                console.log("Items " + successMessage);
             })
         }
 

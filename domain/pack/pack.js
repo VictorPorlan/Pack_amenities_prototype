@@ -21,13 +21,12 @@ Pack.prototype.getExtraFee = function () {
 
 Pack.prototype.recalcularPrecioPack = function () {
   if (this.items != undefined) {
-    
-    let precioTotalItems = this.items.map((x) => {
-      x.recalcularPrecio(),
-      {nombre , precio, ...rest} = x
-      return precio
-    }
-    ).reduce((a, b) => a + b);
+    let precioTotalItems = this.items
+      .map((x) => {
+        x.recalcularPrecio(), ({ nombre, precio, ...rest } = x);
+        return precio;
+      })
+      .reduce((a, b) => a + b);
     return precioTotalItems + this.extraFee;
   }
 };
@@ -35,22 +34,22 @@ Pack.prototype.recalcularPrecioPack = function () {
 Pack.prototype.usarItems = function () {
   if (this.abierto) {
     this.items.forEach((item) => {
-      item.usarItem();
+      item.usarItem()
     });
   }
   this.items.forEach((x) => {
-    if(x.calidad == 0) {
-        this.items.splice(this.items.indexOf(x), 1)
+    if (x.calidad == 0) {
+      this.items.splice(this.items.indexOf(x), 1);
     }
-  })
+  });
 };
 
 Pack.prototype.usarItemIndex = function (index) {
   if (this.abierto) {
     this.items[index].usarItem();
-    if(this.items[index] == 0) {
-      this.items.splice(index, 1)
-  }
+    if (this.items[index].calidad == 0) {
+      this.items.splice(index, 1);
+    }
   }
 };
 

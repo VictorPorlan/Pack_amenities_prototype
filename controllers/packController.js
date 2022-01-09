@@ -108,13 +108,13 @@ var packAPI = (function singleController() {
     No voy a usar la lógica del domain porque abrir() es un closure que se crea al vender el item, 
     pero se perdería al subir el item a la bdd y al volver a crearlo para abrirlo
     */
-    await Packs.findOne({ id: 1 })
+    Packs.findOne({ nombre: req.params.nombre })
       .populate("items")
       .exec(function (err, pack) {
         if (err) {
           return next(err);
         }
-        if (pack.vendido || pack.abierto) {
+        if (pack.vendido && !pack.abierto) {
           pack.abierto = true;
           pack.save();
           res.status(200).type("json").json(pack);
@@ -158,7 +158,7 @@ var packAPI = (function singleController() {
                 x._id
               );
               return item;
-            })
+            }),
           );
           domainPack.usarItems();
           domainPack.items.forEach((x) => {
@@ -171,7 +171,7 @@ var packAPI = (function singleController() {
               }
             });
           });
-          if (domainPack.items.length > 1) {
+          if (domainPack.items.length > 0) {
             usePack.items = domainPack.items;
             usePack.save();
             res.status(200).type("json").json(domainPack);
@@ -202,6 +202,12 @@ var packAPI = (function singleController() {
     Packs.findOne({ nombre: req.params.nombre })
       .populate("items")
       .exec(function (err, usePack) {
+        if (usePack == null) {
+          return res.status(400).type("json").json({
+            error: true,
+            response: "El objeto no existe",
+          });
+        }
         let index = req.params.index - 1;
         if (index > usePack.items.length || index < 0) {
           return res.status(400).type("json").json({
@@ -211,12 +217,6 @@ var packAPI = (function singleController() {
         }
         if (err) {
           return next(err);
-        }
-        if (usePack == null) {
-          return res.status(400).type("json").json({
-            error: true,
-            response: "El objeto no existe",
-          });
         }
         if (usePack.abierto) {
           let { nombre, precio, calidad, abierto, vendido, items } = usePack;
@@ -235,18 +235,25 @@ var packAPI = (function singleController() {
                 x._id
               );
               return item;
-            })
+            }),
+
+
           );
           domainPack.usarItemIndex(index);
-          Items.findOneAndUpdate(
-            { _id: domainPack.items[index]._id },
-            { calidad: domainPack.items[index].calidad, cantidad: domainPack.items[index].cantidad }
-          ).exec(function (err, _item) {
-            if (err) {
-              return next(err);
-            }
-          });
-          if (domainPack.items.length > 1) {
+          if (domainPack.items[index]) {
+            Items.findOneAndUpdate(
+              { _id: domainPack.items[index]._id },
+              {
+                calidad: domainPack.items[index].calidad,
+                cantidad: domainPack.items[index].cantidad,
+              }
+            ).exec(function (err, _item) {
+              if (err) {
+                return next(err);
+              }
+            });
+          }
+          if (domainPack.items.length > 0) {
             usePack.items = domainPack.items;
             usePack.save();
             res.status(200).type("json").json(domainPack);
@@ -308,7 +315,7 @@ var packAPI = (function singleController() {
     openPack,
     createPack,
     useItems,
-    useItem
+    useItem,
   };
 })();
 

@@ -25,9 +25,5 @@ test('Herencia de Pack', () => {
 })
 
 test('Vender un pack', () => {
-   expect(packPremium.vender()).toBe(17)
+   expect(packPremium.vender()).toBe(62)
 })
-
-test('Vender un pack', () => {
-    expect(packPremium.vender()).toBe(17)
- })

@@ -13,7 +13,7 @@ Item.prototype.usarItem = function () {
   }
   if(this.calidad == 0 && this.cantidad > 1){
     this.calidad = 50 
-    this.cantidad = cantidad - 1
+    this.cantidad = this.cantidad - 1
   }
 };
 

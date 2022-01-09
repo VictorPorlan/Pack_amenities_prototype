@@ -5,8 +5,8 @@ module.exports = [
     nombre: "Pack animales",
     precio: 50,
     calidad: "Premium",
-    "vendido": true,
-    "abierto": true,
+    "vendido": false,
+    "abierto": false,
     items: [
       ObjectId("61d58b6fd75d3770be591ce0"),
       ObjectId("61d58aecd75d3770be584aed"),
@@ -19,8 +19,8 @@ module.exports = [
     nombre: "Pack Squanchy Style",
     calidad: "Basic",
     precio: 5.95,
-    "vendido": false,
-    "abierto": false,
+    "vendido": true,
+    "abierto": true,
     items: [
       ObjectId("61d58aa1d75d3770be579cb8"),
       ObjectId("61d58b99d75d3770be596747"),

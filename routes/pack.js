@@ -18,7 +18,7 @@ router.post('/create', packController.packAPI.createPack)
 
 router.get('/buy/:nombre', packController.packAPI.buyPack)
 
-router.get('/open/:id', packController.packAPI.openPack)
+router.get('/open/:nombre', packController.packAPI.openPack)
 
 router.get('/useItems/:nombre', packController.packAPI.useItems)
 

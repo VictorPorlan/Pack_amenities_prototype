@@ -31,7 +31,7 @@ module.exports = [
     _id: ObjectId("61d58b14d75d3770be588aba"),
     nombre: "obeja",
     precio: 50,
-    calidad: 2,
+    calidad: 50,
     material: "Normal",
     demanda: 70,
     cantidad: 1,
@@ -52,7 +52,7 @@ module.exports = [
     calidad: 20,
     material: "Consumible",
     demanda: 63,
-    cantidad: 1,
+    cantidad: 2,
   },
   {
     _id: ObjectId("61d58f93d75d3770be60cd5f"),
@@ -151,7 +151,7 @@ module.exports = [
     calidad: 7,
     material: "Consumible",
     demanda: 6,
-    cantidad: 1,
+    cantidad: 3,
   },
   {
     _id: ObjectId("61d594e784f9c213962d3115"),
@@ -160,7 +160,7 @@ module.exports = [
     calidad: 20,
     material: "Consumible",
     demanda: 13,
-    cantidad: 1,
+    cantidad: 2,
   },
   {
     _id: ObjectId("61d594e784f9c213962d3116"),
@@ -511,7 +511,7 @@ module.exports = [
     calidad: 4,
     material: "Consumible",
     demanda: 12,
-    cantidad: 1,
+    cantidad: 10,
   },
   {
     _id: ObjectId("61d594e784f9c213962d3140"),
