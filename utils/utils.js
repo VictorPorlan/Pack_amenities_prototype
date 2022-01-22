@@ -1,8 +1,8 @@
-requirePack = require("../domain/pack");
+requirePack = require("../domain/pack/pack");
 requireBasic = require("../domain/pack/basic/basic");
 requireStandard = require("../domain/pack/standard/standard");
 requirePremium = require("../domain/pack/premium/premium");
-requireItem = require("../domain/item");
+requireItem = require("../domain/item/item");
 requireConsumible = require("../domain/item/consumible/consumible");
 requireIndestructible = require("../domain/item/indestructible/indestructible");
 requireNormal = require("../domain/item/normal/normal");
@@ -20,7 +20,7 @@ Indestructible = requireIndestructible.class;
 Packs = require("../models/packs");
 Items = require("../models/item");
 
-var parser = (function api() {
+var utils = (function api() {
   const packModeltoDomain = (pack) => {
     let { nombre, precio, calidad, abierto, vendido, items } = pack;
     let domainPack = new this[calidad](
@@ -61,11 +61,13 @@ var parser = (function api() {
         );
       });
   }
+
   return {
     packModeltoDomain,
     packDomaintoModel,
-    saveItems
+    saveItems,
+    responseGenerator
   };
 })();
 
-module.exports = parser;
+module.exports = utils;

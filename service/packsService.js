@@ -7,7 +7,7 @@ requireConsumible = require("../domain/item/consumible/consumible");
 requireIndestructible = require("../domain/item/indestructible/indestructible");
 requireNormal = require("../domain/item/normal/normal");
 
-PackParser = require("./parser");
+Utils = require("../utils/utils");
 Packs = require("../models/packs");
 Items = require("../models/item");
 
@@ -94,10 +94,10 @@ var packService = (function api() {
         .populate("items")
         .then((boughtPack) => {
           if (!boughtPack.vendido) {
-            let domainPack = PackParser.packModeltoDomain(boughtPack);
+            let domainPack = Utils.packModeltoDomain(boughtPack);
             domainPack.vender();
-            PackParser.packDomaintoModel(boughtPack, domainPack);
-            PackParser.saveItems(domainPack);
+            Utils.packDomaintoModel(boughtPack, domainPack);
+            Utils.saveItems(domainPack);
             boughtPack.save();
             return boughtPack;
           } else {
@@ -122,11 +122,11 @@ var packService = (function api() {
         .populate("items")
         .then((usePack) => {
           if (usePack.abierto) {
-            let domainPack = PackParser.packModeltoDomain(usePack);
+            let domainPack = Utils.packModeltoDomain(usePack);
             domainPack.usarItems();
-            PackParser.saveItems(domainPack);
+            Utils.saveItems(domainPack);
             if (domainPack.items.length > 0) {
-              usePack = PackParser.packDomaintoModel(usePack, domainPack);
+              usePack = Utils.packDomaintoModel(usePack, domainPack);
               usePack.save();
               return domainPack;
             } else {
@@ -169,7 +169,7 @@ var packService = (function api() {
             };
           }
           if (usePack.abierto) {
-            let domainPack = PackParser.packModeltoDomain(usePack);
+            let domainPack = Utils.packModeltoDomain(usePack);
             domainPack.usarItemIndex(index);
             if (domainPack.items[index]) {
               Items.findOneAndUpdate(
@@ -181,7 +181,7 @@ var packService = (function api() {
               ).exec(function (_err, _item) {});
             }
             if (domainPack.items.length > 0) {
-              usePack = PackParser.packDomaintoModel(usePack, domainPack);
+              usePack = Utils.packDomaintoModel(usePack, domainPack);
               usePack.save();
               return domainPack;
             } else {
