@@ -9,10 +9,6 @@ function Basic(nombre, precio, abierto, vendido, items) {
   
   Basic.prototype = Object.create(protoPack)
 
-  Basic.prototype.getPrecio = function () {
-    return this.precio - 1
-  }
-
   var factory = (function singleBasic() {
     return {
         getBasic: function getBasic(nombre, precio, abierto, vendido, items) {

@@ -7,18 +7,6 @@ function Pack(nombre, precio, abierto, vendido, items) {
   this.extraFee = 0;
 }
 
-Pack.prototype.getName = function () {
-  return this.nombre;
-};
-
-Pack.prototype.getPrecio = function () {
-  return this.precio;
-};
-
-Pack.prototype.getExtraFee = function () {
-  return this.extraFee;
-};
-
 Pack.prototype.recalcularPrecioPack = function () {
   if (this.items != undefined) {
     let precioTotalItems = this.items

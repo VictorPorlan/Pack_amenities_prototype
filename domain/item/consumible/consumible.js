@@ -2,7 +2,6 @@ requireItem = require('../item')
 protoItem = requireItem.proto
 Item = requireItem.class
 function Consumible(nombre, precio, demanda, calidad, cantidad, id) {
-  console.log(nombre, precio, demanda, calidad, cantidad, id)
     Item.call(this, nombre, precio, demanda, calidad, cantidad, id)
 }
 

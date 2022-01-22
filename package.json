@@ -8,7 +8,8 @@
     "migrate": "node ./db/migrate.js",
     "pretest": "cross-env NODE_ENV=test npm run migrate",
     "test": "cross-env NODE_ENV=test jest --runInBand",
-    "pulltest": "cross-env NODE_ENV=test jest --runInBand"
+    "pulltest": "cross-env NODE_ENV=test jest --runInBand",
+    "coverage": "node ./db/migrate.js && jest --collect-coverage  --runInBand"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

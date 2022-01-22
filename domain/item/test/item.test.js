@@ -20,3 +20,12 @@ test('Recalcular precio', () => {
     itemNormal3.recalcularPrecio()
     expect(itemNormal3.precio).toBe(5)
 })
+
+test('Bajar cantidad', () => {
+    // Si hay mas de 1 y llegas a 0 de calidad, se baja en 1 la cantidad y sube la cantidad de nuevo a 50
+    
+    itemNormal = normalFactory.normal.getNormal('Item Normal', 5, 100, 1, 2)
+    itemNormal.usarItem()
+    expect(itemNormal.calidad).toBe(50)
+    expect(itemNormal.cantidad).toBe(1)
+})

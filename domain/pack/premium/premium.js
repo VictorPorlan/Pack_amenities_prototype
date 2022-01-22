@@ -9,10 +9,6 @@ function Premium(nombre, precio, abierto, vendido, items) {
   
   Premium.prototype = Object.create(protoPack)
 
-  Premium.prototype.getPrecio = function () {
-    return this.precio + 5
-  }
-
   var factory = (function singlePremium() {
     return {
         getPremium: function getPremium(nombre, precio, abierto, vendido, items) {
