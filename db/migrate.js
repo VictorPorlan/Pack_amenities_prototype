@@ -1,9 +1,13 @@
+require('dotenv').config()
 const {MongoClient} = require("mongodb");
-
 const packsCollection = require("./packsCollection")
 const itemsCollection = require("./itemsCollection")
 
-var uri = `mongodb+srv://packs:packs@packs.gvt0s.mongodb.net/packs?retryWrites=true&w=majority`;
+/**
+ * Por motivos educativos he usado el dotenv para guardar las variables. 
+ * Pero ya que el proyecto ha de ser corregido en el caso de que sea necesario el usuario y la contraseña son "packs".
+ */
+var uri = `mongodb+srv://${process.env.ATLAS_USER}:${process.env.ATLAS_PASSWORD}@packs.gvt0s.mongodb.net/packs?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri);
 async function run() {
