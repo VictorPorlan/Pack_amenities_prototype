@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "19d66b0a-fe5e-4315-840e-cf94dd777b26",
+		"name": "Packs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "One Pack",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/packs/findOne/Pack piscina",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"findOne",
+						"Pack piscina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All packs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/packs/allPacks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"allPacks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/packs/delete/61afc35457387547a0c0f6d1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"delete",
+						"61afc35457387547a0c0f6d1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\": \"Pack create\",\n        \"precio\": 50,\n        \"calidad\": \"premium\",\n        \"vendido\": false,\n        \"abierto\": false,\n        \"items\": [\n            \"61dab49161dde91c2c30a102\",\n            \"61dab49161dde91c2c30a103\",\n            \"61dab49161dde91c2c30a104\"\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/packs/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/packs/open/Pack piscina",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"open",
+						"Pack piscina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/packs/buy/Pack piscina",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"buy",
+						"Pack piscina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UseItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/packs/useItems/Pack piscina",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"useItems",
+						"Pack piscina"
+					]
+				},
+				"description": "Usar todos los items del pack"
+			},
+			"response": []
+		},
+		{
+			"name": "UseItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/packs/useItem/Pack piscina/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packs",
+						"useItem",
+						"Pack piscina",
+						"1"
+					]
+				},
+				"description": "Usar un item en base al índice indicado"
+			},
+			"response": []
+		}
+	]
+}
