@@ -44,7 +44,7 @@ var utils = (function api() {
   }
 
   const packDomaintoModel = (packModel, packDomain) => {
-    let { nombre, precio, calidad, abierto, vendido, items } = packDomain;
+    let { nombre, precio, _calidad, abierto, vendido, items } = packDomain;
     packModel.nombre = nombre;
     packModel.precio =precio;
     packModel.abierto = abierto;

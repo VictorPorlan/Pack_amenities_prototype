@@ -11,18 +11,12 @@ Items = require("../models/item");
 var itemAPI = (function singleController() {
   const findName = (req, res, next) => {
     Items.findOne({ nombre: req.params.nombre }).exec(function (err, item) {
-      if (err) {
-        return next(err);
-      }
       res.status(200).type("json").json(item);
     });
   };
   const findAllItems = (req, res, next) => {
     Items.find()
       .exec(function (err, items) {
-        if (err) {
-          return next(err);
-        }
         res.status(200).type("json").json(items);
       });
   };
@@ -31,9 +25,6 @@ var itemAPI = (function singleController() {
       err,
       deletedItem
     ) {
-      if (err) {
-        return next(err);
-      }
       res.status(200).type("json").json(deletedItem);
     });
   };
@@ -58,9 +49,6 @@ var itemAPI = (function singleController() {
   const usarItem = async (req, res, next) => {
     Items.findOne({ nombre: req.params.nombre }).exec(function (err, item) {
       let {nombre, precio, demanda, calidad, cantidad} = item
-      if (err) {
-        return next(err);
-      }
       let domainItem = new this[item.material](nombre, precio, demanda, calidad, cantidad);
       domainItem.usarItem()
       item.calidad = domainItem.calidad
@@ -73,9 +61,6 @@ var itemAPI = (function singleController() {
   const recalcularPrecio = async (req, res, next) => {
     Items.findOne({ nombre: req.params.nombre }).exec(function (err, item) {
       let {nombre, precio, demanda, calidad, cantidad} = item
-      if (err) {
-        return next(err);
-      }
       let domainItem = new this[item.material](nombre, precio, demanda, calidad, cantidad);
       domainItem.recalcularPrecio()
       item.precio = domainItem.precio

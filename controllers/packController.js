@@ -28,7 +28,7 @@ var packAPI = (function singleController() {
       ? res.status(200).type("json").json(result)
       : res.status(400).type("json").json({
           error: true,
-          response: "Ha ocurrido un error",
+          response: "Ha ocurrido un error, aseguresé de que el pack existe",
         });
   };
 
@@ -43,12 +43,12 @@ var packAPI = (function singleController() {
   };
 
   const deletePack = async (req, res) => {
-    const result = await PackService.deletePack(req.params.id);
+    const result = await PackService.deletePack(req.params.nombre);
     result
       ? res.status(200).type("json").json(result)
       : res.status(400).type("json").json({
           error: true,
-          response: "No se ha podido eliminar el pack",
+          response: "No se ha podido eliminar el pack, aseguresé de que el pack existe",
         });
   };
 
@@ -62,7 +62,7 @@ var packAPI = (function singleController() {
           })
         : res.status(400).type("json").json({
             error: true,
-            response: "Ha ocurrido un error",
+            response: "Ha ocurrido un error, compruebe que el pack existe",
           });
     } else {
       res.status(200).type("json").json(result);
@@ -80,7 +80,7 @@ var packAPI = (function singleController() {
           })
         : res.status(400).type("json").json({
             error: true,
-            response: "Ha ocurrido un error",
+            response: "Ha ocurrido un error, compruebe que el pack existe",
           });
     } else {
       res.status(200).type("json").json(result);
@@ -97,7 +97,7 @@ var packAPI = (function singleController() {
         case "server":
           res.status(400).type("json").json({
             error: true,
-            response: "Ha ocurrido un error",
+            response: "Ha ocurrido un error, compruebe que el pack existe",
           });
           break;
         case "not open":
@@ -125,7 +125,7 @@ var packAPI = (function singleController() {
         case "server":
           res.status(400).type("json").json({
             error: true,
-            response: "Ha ocurrido un error",
+            response: "Ha ocurrido un error, compruebe que el pack existe",
           });
           break;
         case "not open":

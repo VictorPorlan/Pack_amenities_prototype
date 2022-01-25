@@ -12,7 +12,7 @@ router.get('/findOne/:nombre', packController.packAPI.findName)
 
 router.get('/allPacks', packController.packAPI.findAllPacks)
 
-router.delete('/delete/:id', packController.packAPI.deletePack)
+router.delete('/delete/:nombre', packController.packAPI.deletePack)
 
 router.post('/create', packController.packAPI.createPack)
 

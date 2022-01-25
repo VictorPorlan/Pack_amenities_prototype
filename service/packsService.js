@@ -48,11 +48,13 @@ var packService = (function api() {
     }
   }
 
-  async function deletePack(id) {
+  async function deletePack(nombre) {
     try {
-      let response = Packs.findOneAndDelete({ _id: id }).then((response) => {
-        return response;
-      });
+      let response = Packs.findOneAndDelete({ nombre: nombre }).then(
+        (response) => {
+          return response;
+        }
+      );
       return response;
     } catch {
       return false;
@@ -68,14 +70,21 @@ var packService = (function api() {
       let response = Packs.findOne({ nombre: nombre })
         .populate("items")
         .then((pack) => {
-          if (pack.vendido && !pack.abierto) {
-            pack.abierto = true;
-            pack.save();
-            return pack;
+          if (pack !== null) {
+            if (pack.vendido && !pack.abierto) {
+              pack.abierto = true;
+              pack.save();
+              return pack;
+            } else {
+              return {
+                error: true,
+                exists: true,
+              };
+            }
           } else {
             return {
               error: true,
-              exists: true,
+              exists: false,
             };
           }
         });
@@ -93,6 +102,7 @@ var packService = (function api() {
       let response = Packs.findOne({ nombre: nombre })
         .populate("items")
         .then((boughtPack) => {
+          if (boughtPack !== null) {
           if (!boughtPack.vendido) {
             let domainPack = Utils.packModeltoDomain(boughtPack);
             domainPack.vender();
@@ -105,6 +115,12 @@ var packService = (function api() {
               error: true,
               bought: true,
             };
+          }}
+          else{
+            return {
+              error: true,
+              bought: false
+            }
           }
         });
       return response;
@@ -121,6 +137,7 @@ var packService = (function api() {
       let response = Packs.findOne({ nombre: nombre })
         .populate("items")
         .then((usePack) => {
+          if(usePack !== null){
           if (usePack.abierto) {
             let domainPack = Utils.packModeltoDomain(usePack);
             domainPack.usarItems();
@@ -145,6 +162,12 @@ var packService = (function api() {
               exception: true,
               type: "not open",
             };
+          }}
+          else{
+            return{
+              exception: true,
+              type: "server",
+            }
           }
         });
       return response;
@@ -161,6 +184,7 @@ var packService = (function api() {
       let response = Packs.findOne({ nombre: nombre })
         .populate("items")
         .then((usePack) => {
+          if(usePack !== null){
           let index = indexPack - 1;
           if (index > usePack.items.length || index < 0) {
             return {
@@ -201,6 +225,13 @@ var packService = (function api() {
               type: "not open",
             };
           }
+        }
+        else{
+          return {
+            exception: true,
+            type: "server",
+          };
+        }
         });
       return response;
     } catch {
