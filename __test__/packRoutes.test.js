@@ -34,10 +34,10 @@ describe("Packs routes", () => {
 
     test("Test packs/delete/:id", async () => {
         const res = await request(app)
-            .delete(`/packs/delete/61afc35457387547a0c0f6d1`);
+            .delete(`/packs/delete/Pack brujas`);
         expect(res.get('Content-Type')).toEqual(expect.stringMatching('/json'));
         expect(res.statusCode).toEqual(200);
-        expect(res.body._id).toBe('61afc35457387547a0c0f6d1');
+        expect(res.body.nombre).toBe('Pack brujas');
     }, 10000);              
 
     test("Test /packs/create", async () => {
