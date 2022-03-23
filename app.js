@@ -4,7 +4,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var Packs = require('./models/packs')
+var cors = require('cors')
 
 var mongoConfig = require('./db/mongoConf');
 mongoConfig.connect();
@@ -18,6 +18,7 @@ var packRouter = require('./routes/pack');
 var itemRouter = require('./routes/item');
 
 var app = express();
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
