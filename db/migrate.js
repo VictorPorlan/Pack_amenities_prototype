@@ -14,7 +14,7 @@ async function run() {
     try {
         await client.connect();
 
-        const database = client.db('packs_test');
+        const database = client.db('packs');
         const packs = database.collection('packs');
         const items = database.collection('items');
 

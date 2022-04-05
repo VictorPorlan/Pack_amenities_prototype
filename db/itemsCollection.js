@@ -11,7 +11,7 @@ module.exports = [
   },
   {
     _id: ObjectId("61d58aecd75d3770be584aed"),
-    nombre: "camello",
+    nombre: "Camello",
     precio: 40,
     calidad: 44,
     material: "Normal",
@@ -29,7 +29,7 @@ module.exports = [
   },
   {
     _id: ObjectId("61d58b14d75d3770be588aba"),
-    nombre: "obeja",
+    nombre: "Oveja",
     precio: 50,
     calidad: 50,
     material: "Normal",
